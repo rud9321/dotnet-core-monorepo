@@ -1,0 +1,53 @@
+<Project>
+  <PropertyGroup>
+    <NetStandardVersion>net6.0</NetStandardVersion>
+    <NetCoreVersion>net6.0</NetCoreVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <!-- Sql related packages -->
+  <PropertyGroup>
+    <MicrosoftDataSqlClientVersion>2.1.3</MicrosoftDataSqlClientVersion>
+    <MicrosoftEntityFrameworkCoreInMemoryVersion>5.0.7</MicrosoftEntityFrameworkCoreInMemoryVersion>
+    <MicrosoftIdentityClientVersion>4.39.0</MicrosoftIdentityClientVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CoverletVersion>3.1.0</CoverletVersion>
+    <MicrosoftExtensionsVersion>5.0.0</MicrosoftExtensionsVersion>
+    <CsvHelperVersion>28.0.1</CsvHelperVersion>
+    <GrpcCoreVersion>2.43.0</GrpcCoreVersion>
+    <JetBrainsVersion>2021.3.0</JetBrainsVersion>
+    <SourceLinkVersion>2.8.3</SourceLinkVersion>
+    <SystemIOAbstractionsVersion>16.0.3</SystemIOAbstractionsVersion>
+    <AutoMapperVersion>11.0.0</AutoMapperVersion>
+    <MorelinqVersion>3.3.2</MorelinqVersion>
+    <AWSSDKS3>3.7.7.9</AWSSDKS3>
+    <CompareNETObjectsVersion>4.74.0</CompareNETObjectsVersion>
+    <NewtonsoftJsonVersion>13.0.1</NewtonsoftJsonVersion>
+  </PropertyGroup>
+
+  <!-- Testing utilities - third party packages -->
+  <PropertyGroup>
+    <MSTestSDKVersion>17.0.0</MSTestSDKVersion>
+    <MoqVersion>4.16.1</MoqVersion>
+    <XunitVersion>2.4.1</XunitVersion>
+    <AutoFixtureVersion>4.17.0</AutoFixtureVersion>
+    <FluentAssertionsVersion>6.3.0</FluentAssertionsVersion>
+    <ApprovalTestsVersion>5.7.1</ApprovalTestsVersion>
+    <ApprovalTestsNetXunitVersion>1.0.0</ApprovalTestsNetXunitVersion>
+    <AutoBogusVersion>2.10.0</AutoBogusVersion>
+  </PropertyGroup>
+
+  <!-- Analyzers -->
+  <!-- <PropertyGroup>
+    <StyleCopVersion>1.2.0-beta.205</StyleCopVersion>
+    <SerilogAnalyzerVersion>0.15.0</SerilogAnalyzerVersion>
+    <LindhartAnalyserMissingAwaitWarningVersion>2.0.0</LindhartAnalyserMissingAwaitWarningVersion>
+    <SmartAnalyzersCSharpExtensionsAnnotationsVersion>3.10.0</SmartAnalyzersCSharpExtensionsAnnotationsVersion>
+  </PropertyGroup> -->
+
+  <PropertyGroup>
+    <LangVersion>10.0</LangVersion>
+  </PropertyGroup>
+</Project>

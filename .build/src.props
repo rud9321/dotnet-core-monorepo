@@ -1,0 +1,41 @@
+<Project>
+
+  <Import Project="$(MSBuildThisFileDirectory)dependencies.props" />
+
+  <PropertyGroup>
+    <DebugType>portable</DebugType>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+
+    <Copyright>© MSCodeHub. All rights reserved.</Copyright>
+
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/rud9321/dotnet-core-monorepo.git</RepositoryUrl>
+
+    <LangVersion>$(LangVersion)</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+      <WarningsAsErrors />
+  </PropertyGroup>
+
+  <!-- <ItemGroup>
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)stylecop.json" />
+  </ItemGroup> -->
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="$(JetBrainsVersion)" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(Configuration)' == 'Release' ">
+    <PackageReference Include="SourceLink.Embed.AllSourceFiles" Version="$(SourceLinkVersion)" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="dotnet-sourcelink" Version="$(SourceLinkVersion)" />
+  </ItemGroup>
+
+</Project>

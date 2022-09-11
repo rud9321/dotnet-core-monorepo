@@ -1,0 +1,9 @@
+<Project>
+
+  <Import Project="$(MSBuildThisFileDirectory)../.build/src.props" />
+
+  <PropertyGroup>
+    <PackageTags>export;$(PackageTags)</PackageTags>
+  </PropertyGroup>
+
+</Project>
